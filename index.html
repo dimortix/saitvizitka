@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Алексея</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Сайт Портфолио</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="content">
+            <img src="images/about.jpg" alt="Алексей" class="about-img">
+            <p> Меня зовут Алексей, я веб-разработчик с более чем 5-летним опытом работы. </p>
+            <p> Я специализируюсь на создании современных и удобных веб-приложений.</p>
+            <p> Моя цель - предоставить качественные решения, которые удовлетворят потребности клиента.</p>
+            <p> Работаю с различными технологиями, такими как HTML, CSS, JavaScript и фреймворками.</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="gallery">
+            <div class="project" data-project="1">
+                <img src="images/project1.jpg" alt="Проект 1">
+                <h3>Проект 1</h3>
+                <p>Это был проект по разработке сайта для онлайн-магазина.</p>
+            </div>
+            <div class="project" data-project="2">
+                <img src="images/project2.jpg" alt="Проект 2">
+                <h3>Проект 2</h3>
+                <p>Это был проект по созданию блога для путешественника.</p>
+            </div>
+            <div class="project" data-project="3">
+                <img src="images/project3.jpg" alt="Проект 3">
+                <h3>Проект 3</h3>
+                <p>Это был проект по разработке корпоративного сайта для...</p>
+            </div>
+            <div class="project" data-project="4">
+                <img src="images/project4.jpg" alt="Проект 4">
+                <h3>Проект 4</h3>
+                <p>Это был проект по созданию личного блога для фотографа.</p>
+            </div>
+            <div class="project" data-project="5">
+                <img src="images/project5.jpg" alt="Проект 5">
+                <h3>Проект 5</h3>
+                <p>Это был проект по разработке форума для разработчиков.</p>
+            </div>
+            <div class="project" data-project="6">
+                <img src="images/project6.jpg" alt="Проект 6">
+                <h3>Проект 6</h3>
+                <p>Это был проект по созданию веб-приложения для...</p>
+            </div>
+        </div>
+    </section>    
+    <section id="contact">
+        <h2>Контакты</h2>
+        <div class="contact-details">
+            <p><a href="https://vk.com/feed">Мой личный ВК</a></p>
+            <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCBBkHHSMKcXKNmxCfVlGwzmkjHZWVLpdGFsWGQZcknStcBGMQqVggcbPFWKqZfFXpqNlq">Email</a></p>
+            <p><a href="https://www.instagram.com/">INST</a></p>
+            <p><a href="tel:+7(952)812-72-31">+7(952)812-72-31</a></p>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Алексей. Все права защищены.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Модальные окна для проектов -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 1</h2>
+            <img src="images/project1.jpg" alt="Проект 1">
+            <p>Это был проект по разработке сайта для онлайн-магазина, включающий интеграцию с платежными системами и оптимизацию для мобильных устройств.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 2</h2>
+            <img src="images/project2.jpg" alt="Проект 2">
+            <p>Это был проект по созданию блога для путешественника, включающий карту с маршрутами и возможность добавления фотографий из путешествий.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 3</h2>
+            <img src="images/project3.jpg" alt="Проект 3">
+            <p>Это был проект по разработке корпоративного сайта для IT-компании, включающий интеграцию с CRM-системой и внутренний портал для сотрудников.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 4</h2>
+            <img src="images/project4.jpg" alt="Проект 4">
+            <p>Это был проект по созданию личного блога для фотографа, включающий галерею изображений с возможностью комментирования и лайков.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 5</h2>
+            <img src="images/project5.jpg" alt="Проект 5">
+            <p>Это был проект по разработке форума для разработчиков, включающий систему рейтингов и разделы для обмена кодом и проектами.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Проект 6</h2>
+            <img src="images/project6.jpg" alt="Проект 6">
+            <p>Это был проект по созданию веб-приложения для управления задачами, включающий функции календаря и напоминаний.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
