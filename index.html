@@ -21,11 +21,14 @@
     <section id="about">
         <h2>Обо мне</h2>
         <div class="content">
-            <img src="images/about.jpg" alt="Алексей" class="about-img">
-            <p> Меня зовут Алексей, я веб-разработчик с более чем 5-летним опытом работы. </p>
-            <p> Я специализируюсь на создании современных и удобных веб-приложений.</p>
-            <p> Моя цель - предоставить качественные решения, которые удовлетворят потребности клиента.</p>
-            <p> Работаю с различными технологиями, такими как HTML, CSS, JavaScript и фреймворками.</p>
+            <img src="images/about.jpg" alt="Дмитрий" class="about-img">
+            <p>Меня зовут Дмитрий, я веб-разработчик с более чем 5-летним опытом работы. </p>
+            <p>Я специализируюсь на создании современных и удобных веб-приложений. </p>
+            <p>Моя цель - предоставить качественные решения, которые удовлетворят потребности клиента.</p>
+            <p>Работаю с различными технологиями, такими как HTML, CSS, JavaScript и фреймворками. </p>
+            <p>Люблю решать сложные задачи и стремлюсь к постоянному профессиональному развитию. </p>
+            <p>В своей работе я ориентируюсь на новейшие стандарты и тенденции в веб-разработке. </p>
+            <p>В свободное время увлекаюсь изучением новых технологий и их применением на практике.</p>
         </div>
     </section>
     <section id="portfolio">
@@ -33,53 +36,61 @@
         <div class="gallery">
             <div class="project" data-project="1">
                 <img src="images/project1.jpg" alt="Проект 1">
-                <h3>Проект 1</h3>
-                <p>Это был проект по разработке сайта для онлайн-магазина.</p>
+                <h3>Rent House</h3>
+                <p>Это был проект по разработке сайта аренды апартаментов</p>
             </div>
             <div class="project" data-project="2">
                 <img src="images/project2.jpg" alt="Проект 2">
-                <h3>Проект 2</h3>
-                <p>Это был проект по созданию блога для путешественника.</p>
+                <h3>Petroleum Artist</h3>
+                <p>Это был проект по созданию портфолио для художника</p>
             </div>
             <div class="project" data-project="3">
                 <img src="images/project3.jpg" alt="Проект 3">
-                <h3>Проект 3</h3>
-                <p>Это был проект по разработке корпоративного сайта для...</p>
+                <h3>NFT Monster</h3>
+                <p>Это был проект по разработке сайта NFT проекта...</p>
             </div>
             <div class="project" data-project="4">
                 <img src="images/project4.jpg" alt="Проект 4">
-                <h3>Проект 4</h3>
-                <p>Это был проект по созданию личного блога для фотографа.</p>
+                <h3>Food Send</h3>
+                <p>Это был проект по созданию сайта доставки еды.</p>
             </div>
             <div class="project" data-project="5">
                 <img src="images/project5.jpg" alt="Проект 5">
-                <h3>Проект 5</h3>
-                <p>Это был проект по разработке форума для разработчиков.</p>
+                <h3>ARC Studio</h3>
+                <p>Это был проект по разработке сайта для дизайн студии.</p>
             </div>
             <div class="project" data-project="6">
                 <img src="images/project6.jpg" alt="Проект 6">
-                <h3>Проект 6</h3>
-                <p>Это был проект по созданию веб-приложения для...</p>
+                <h3>The Time News</h3>
+                <p>Это был проект по созданию новостного портала</p>
             </div>
         </div>
-    </section>    
+    </section>
     <section id="contact">
         <h2>Контакты</h2>
-        <div class="contact-details">
-            <p><a href="https://vk.com/feed">Мой личный ВК</a></p>
-            <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCBBkHHSMKcXKNmxCfVlGwzmkjHZWVLpdGFsWGQZcknStcBGMQqVggcbPFWKqZfFXpqNlq">Email</a></p>
-            <p><a href="https://www.instagram.com/">INST</a></p>
-            <p><a href="tel:+7(952)812-72-31">+7(952)812-72-31</a></p>
+        <div class="contact-container">
+            <div class="contact-details">
+                <a href="https://vk.com/feed"><img src="images/imagesvk.png" alt="VK"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCBBkHHSMKcXKNmxCfVlGwzmkjHZWVLpdGFsWGQZcknStcBGMQqVggcbPFWKqZfFXpqNlq"><img src="images/imagesemail.png" alt="Email"></a>
+                <a href="https://www.instagram.com/"><img src="images/imagesinst.png" alt="Instagram"></a>
+                <a href="tel:+7(952)812-72-31"><img src="images/imagesphone.png" alt="Phone"></a>
+            </div>
+            <div class="feedback-form">
+                <form id="contactForm">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
+    </section>  
+    
     <footer>
-        <p>&copy; 2024 Алексей. Все права защищены.</p>
+        <p>&copy; 2024 Дмитрий. Все права защищены.</p>
         <nav>
             <ul>
                 <li><a href="#about">Обо мне</a></li>
@@ -93,49 +104,61 @@
     <div class="modal" id="modal1">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Проект 1</h2>
-            <img src="images/project1.jpg" alt="Проект 1">
-            <p>Это был проект по разработке сайта для онлайн-магазина, включающий интеграцию с платежными системами и оптимизацию для мобильных устройств.</p>
+            <h2>Rent House</h2>
+            <a href="https://www.behance.net/gallery/158868437/House-Website-cui-vuyshpt?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=0" target="_blank">
+                <img src="images/project1.jpg" alt="Проект 1">
+            </a>
+            <p>Конечная цель проекта по разработке сайта аренды апартаментов состояла в создании удобной и интуитивно понятной платформы, которая позволяет пользователям арендовать апартаменты легко и безопасно. Сайт предлагает широкий выбор доступных апартаментов с подробной информацией о каждом объекте, включая фотографии, описание, цены, расположение и удобства.</p>
         </div>
     </div>
     <div class="modal" id="modal2">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Проект 2</h2>
-            <img src="images/project2.jpg" alt="Проект 2">
-            <p>Это был проект по созданию блога для путешественника, включающий карту с маршрутами и возможность добавления фотографий из путешествий.</p>
+            <h2>Petroleum Artist</h2>
+            <a href="https://www.behance.net/gallery/178278513/WEBSITE-FOR-PETROLEUM-ARTIST?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=3" target="_blank">
+                <img src="images/project2.jpg" alt="Проект 2">
+            </a>
+            <p>Проект по созданию портфолио для художника имеет целью представить и выделить творческую работу и навыки художника. Сайт портфолио предоставляет платформу для художника, где он может показать свои произведения и привлечь внимание к своему искусству.</p>
         </div>
     </div>
     <div class="modal" id="modal3">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Проект 3</h2>
-            <img src="images/project3.jpg" alt="Проект 3">
-            <p>Это был проект по разработке корпоративного сайта для IT-компании, включающий интеграцию с CRM-системой и внутренний портал для сотрудников.</p>
+            <h2>NFT Monster</h2>
+            <a href="https://www.behance.net/gallery/138307691/Monster-NFT-landing-page?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=7" target="_blank">
+                <img src="images/project3.jpg" alt="Проект 3">
+            </a>
+            <p>Проект по разработке сайта NFT проекта имеет целью создание платформы для продажи, покупки и обмена цифровых активов в формате NFT (непередаваемый токен). Сайт предоставляет пользовательский интерфейс, который позволяет пользователям загружать свои уникальные цифровые произведения и продавать их на основе технологии блокчейн.</p>
         </div>
     </div>
     <div class="modal" id="modal4">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Проект 4</h2>
-            <img src="images/project4.jpg" alt="Проект 4">
-            <p>Это был проект по созданию личного блога для фотографа, включающий галерею изображений с возможностью комментирования и лайков.</p>
+            <h2>Food Send</h2>
+            <a href="https://www.behance.net/gallery/74688685/My-food-delivery?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=13" target="_blank">
+                <img src="images/project4.jpg" alt="Проект 4">
+            </a>
+            <p>Проект по созданию сайта доставки еды имеет целью предоставить удобную платформу, которая позволяет пользователям заказывать еду онлайн и доставлять ее в указанное место. Сайт доставки еды обеспечивает удобство, выбор и простоту использования для клиентов и партнеров.</p>
         </div>
     </div>
     <div class="modal" id="modal5">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Проект 5</h2>
-            <img src="images/project5.jpg" alt="Проект 5">
-            <p>Это был проект по разработке форума для разработчиков, включающий систему рейтингов и разделы для обмена кодом и проектами.</p>
+            <h2>ARC Studio</h2>
+            <a href="https://www.behance.net/gallery/165965629/Architectural-studio-branding-ARCSTUDIO?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=21" target="_blank">
+                <img src="images/project5.jpg" alt="Проект 5">
+            </a>
+            <p>Проект по разработке сайта для дизайн-студии имеет целью представить и выделить творческую работу и услуги дизайн-студии. Сайт дизайн-студии предоставляет платформу для презентации портфолио, информации о услугах, контактной информации и других деталей, связанных с деятельностью студии.</p>
         </div>
     </div>
     <div class="modal" id="modal6">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Проект 6</h2>
-            <img src="images/project6.jpg" alt="Проект 6">
-            <p>Это был проект по созданию веб-приложения для управления задачами, включающий функции календаря и напоминаний.</p>
+            <a href="https://www.behance.net/gallery/106627039/The-New-Times-NEWS-PORTAL?tracking_source=search_projects|%D1%86%D1%83%D0%B8+webdesign&l=33" target="_blank">
+                <img src="images/project6.jpg" alt="Проект 6">
+            </a>
+            <p>Проект по созданию новостного портала имеет целью предоставить пользователю информацию о последних новостях и событиях в различных областях, таких как политика, экономика, спорт, развлечения и другие. Новостной портал обеспечивает платформу для публикации и распространения новостей с помощью интерфейса, который обеспечивает удобство использования и навигации для пользователей.</p>
         </div>
     </div>
     <script src="scripts.js"></script>

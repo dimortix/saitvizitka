@@ -83,7 +83,7 @@ h2 {
     background: white;
     border: 1px solid #ddd;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -127,8 +127,15 @@ h2 {
     margin-bottom: 20px;
 }
 
-.contact-details p {
-    margin: 5px 0;
+.contact-details a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #555;
 }
 
 .social-links {
@@ -142,7 +149,7 @@ h2 {
     transition: color 0.3s;
 }
 
-.social-links a:hover {
+social-links a:hover {
     color: #555;
 }
 
@@ -175,7 +182,6 @@ footer nav ul li a {
 footer nav ul li a:hover {
     color: #f4f4f4;
 }
-
 
 /* Модальные окна */
 .modal {
@@ -235,3 +241,174 @@ footer nav ul li a:hover {
     from { transform: translateY(-50px); }
     to { transform: translateY(0); }
 }
+
+.contact-details a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #555;
+}
+
+.contact-details, .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-details a, .social-links a {
+    text-decoration: none;
+}
+
+.contact-details img, .social-links img {
+    width: 80px;
+    height: 80px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form input, .feedback-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #555;
+}
+
+/* Center the icons */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-details,
+.social-links,
+.feedback-form {
+    width: 80%;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details,
+    .social-links,
+    .feedback-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
